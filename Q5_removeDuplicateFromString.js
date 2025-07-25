@@ -7,7 +7,6 @@ function removeDuplicate(str) {
     for (let j = 0; j < newStr.length; j++) {
       if (str[i] === newStr[j]) {
         isDuplicate = true;
-        break;
       }
     }
     if (isDuplicate == false) {
