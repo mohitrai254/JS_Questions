@@ -33,7 +33,7 @@ b.	Output: [1, 2,3,0,4,5,6,0,6,7,8,0]
 
 14)	Implement a deep clone(copy) function in JavaScript that creates a copy of a nested object or array without any reference to the original. 
 
-15)	write a function to find how many times an elements are repeated in an array [1,2,3,3,5,2,1,7,6,8,7,8] and in string "abcdaabdlfjl'
+15)	write a function to find how many times an elements are repeated in an array [1,2,3,3,5,2,1,7,6,8,7,8] and in string "abcdaabdlfjl".
 
 16)	write a function to capitalize the each words first letter to capital 
 Ex : ['abc','def','ghi']
@@ -48,8 +48,10 @@ a.	ex : [{sub:'Maths', marks:60},{sub:'Science', marks:70},{sub:'English', marks
 
 21)	Create a simple search application and implement a debouncing functionality while searching
 
-22)	Write a function to remove the duplicate from 2 arrays, let a = [1,2,3,4,5] let b = [5,3,7,8,9]
+22)	Write a function to remove the duplicate from 2 arrays, let a = [1,2,3,4,5] let b = [5,3,7,8,9], using new Set, without new Set
 
 23)	Write a JavaScript program that takes an array like [1, 1, 2, 3, 3, 3] and returns an object where the keys are the elements and the values are the count of how many times each element appears
 
 24) Explain AJAX method and fetch an API using ajax method and render the data over the web browser.
+
+25) JQuery
