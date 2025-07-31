@@ -28,6 +28,33 @@ function renderTasks() {
     });
 
     li.appendChild(deleteBtn);
+
+    const editBtn = document.createElement("button");
+    editBtn.textContent = "Edit";
+    editBtn.addEventListener("click", () => {
+      const input = document.createElement("input");
+      input.type = "text";
+      input.value = el;
+
+      const saveBtn = document.createElement("button");
+      saveBtn.textContent = "Save";
+
+      // When Save is clicked
+      saveBtn.addEventListener("click", () => {
+        const updatedValue = input.value.trim();
+        if (updatedValue !== "") {
+          tasks[index] = updatedValue;
+          renderTasks();
+        }
+      });
+
+      // Clear existing elements and show input + save
+      li.innerHTML = "";
+      li.appendChild(input);
+      li.appendChild(saveBtn);
+    });
+    li.appendChild(editBtn);
+
     taskDisplay.appendChild(li);
   });
 }
@@ -39,7 +66,7 @@ taskInput.addEventListener("keydown", (e) => {
 });
 
 deleteAllBtn.addEventListener("click", () => {
-  console.log("CLicked");
+  console.log("Clicked");
   tasks = [];
   renderTasks();
 });
